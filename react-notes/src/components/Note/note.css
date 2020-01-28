@@ -1,0 +1,79 @@
+.note {
+  width: 200px;
+  height: auto;
+  float: left;
+  background-color: yellow;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  padding: 10px;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.note .save-textarea {
+  background: none;
+  border: none;
+}
+
+.note:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.delete-note,
+.save-note {
+  position: absolute;
+  display: none;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.delete-note {
+  top: 0;
+  right: 0;
+}
+
+.save-note {
+  top: 5px;
+  right: 5px;
+}
+
+.note:hover .delete-note,
+.note:hover .save-note {
+  display: block;
+}
+.note:hover .save-textarea::-webkit-scrollbar-thumb {
+  background-color: #8a8475;
+}
+
+.save-textarea::-webkit-scrollbar {
+  width: 9px;
+  height: 3px;
+}
+
+.save-textarea::-webkit-scrollbar-button,
+.save-textarea::-webkit-scrollbar-track,
+.save-textarea::-webkit-scrollbar-corner,
+.save-textarea::-webkit-resizer {
+  background-color: transparent;
+}
+
+.save-textarea::-webkit-scrollbar-button {
+  height: 25px;
+}
+
+.save-textarea::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.save-textarea::-webkit-scrollbar-thumb {
+  background-color: #b3ab98;
+  border-radius: 3px;
+}

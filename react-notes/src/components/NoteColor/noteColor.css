@@ -1,0 +1,40 @@
+.note-color input[type="radio"] {
+  display: none;
+}
+
+.note-color input[type="radio"] + label {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.note-color input[type="radio"] + label div {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 4px 0 0;
+  padding-left: 3px;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 38px;
+}
+.note-color input[type="radio"] + label span {
+  font-size: 22px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.note-color input[type="radio"] + label div {
+  background-color: #ffd700;
+}
+.note-color input[type="radio"]:checked + label span {
+  opacity: 1;
+}
+
+.note-color input[type="radio"]:hover + label span {
+  opacity: 1;
+}
