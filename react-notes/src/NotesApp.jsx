@@ -61,6 +61,7 @@ export default function NotesApp({
         notes={!filter ? notes : filter}
         onNoteDelete={handleNoteDelete}
       />
+      <h1>HELLO WORLD!</h1>
     </div>
   );
 }
