@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build docker image. Build app.') {
+            steps {
+                git 'https://github.com/vdmemory/project-docker-react'
+                sh 'docker-compose build'
+            }
+        }
+    }
+}
